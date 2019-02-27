@@ -40,3 +40,4 @@
           (logger:log(Level,#{},#{report_cb => fun(_) -> {(Format), (Args)} end}))
         end).
 
+-define(LOG(Level, Format), ?LOG(Level, Format, [])).
